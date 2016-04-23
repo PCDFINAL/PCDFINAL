@@ -3,9 +3,10 @@ body {
 	margin:0;
 	padding:45px 0 0 0;
 	width:100%;
-	color:#959595;
 	font:normal 12px/1.8em Arial, Helvetica, sans-serif;
 	background:url(images/bg.jpg);
+        	color:#959595;
+
 }
 html, .main {
 	padding:0;
@@ -14,8 +15,10 @@ html, .main {
 .logo {
 	float:left;
 	width:299px;
-	padding:110px 0 0 0;
+	padding:0px 0 0 0;
 	margin:0 auto;
+      background: url(images/EH.png);
+
 }
 h1 {
 	margin:0;
@@ -144,6 +147,16 @@ a.rm, a.com {
 .mainbar .post-data a {
 	color:#595959;
 }
+.sb_menu .spec a {
+	padding:5px 15px;
+	background:#78bbe6;
+	color:#FFF;
+}
+.sidebar .spec a {
+	padding:5px 15px;
+	background:#78bbe6;
+	color:#FFF;
+}
 .mainbar .spec a {
 	padding:5px 15px;
 	background:#78bbe6;
@@ -167,6 +180,7 @@ a.rm, a.com {
 .sidebar .gadget {
 	margin:0;
 	padding:10px 0;
+        
 }
 .sidebar .gadget .title {
 	text-align:right;
@@ -181,11 +195,14 @@ ul.sb_menu, ul.ex_menu, .testi {
 	padding:0 10px;
 	color:#939393;
 	list-style:none;
+        
 }
 ul.sb_menu li, ul.ex_menu li {
 	margin:0;
 }
 ul.sb_menu li {
+	background:#78bbe6;
+	color:#FFF;
 	padding:2px 0;
 }
 ul.ex_menu li {
@@ -244,11 +261,11 @@ ul.ex_menu li a:hover {
 }
 .fbg .c2 {
 	padding:0 15px;
-	width:324px;
+	width:400px;
 }
 .fbg .c3 {
-	padding:0 0 0 15px;
-	width:290px;
+	
+	width:550px;
 	background:none;
 }
 .fbg .c1 img {

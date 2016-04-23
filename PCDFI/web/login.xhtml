@@ -1,0 +1,49 @@
+<html lang="en"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:a="http://xmlns.jcp.org/jsf/passthrough"
+      xmlns:p="http://primefaces.org/ui">
+    <h:head>
+        <title>Welcome</title>
+        <link rel="stylesheet" type="text/css" href="layout.css"/>
+
+    </h:head>
+    <h:body>
+       
+		<h:form id="form" class="register">
+                    
+                         <h:panelGroup rendered="#{not empty user}">
+                        
+                        <h1 class="register-title">Bienvenue <br/> #{user.emailagent} !</h1>
+                        
+                        <a href="modif.xhtml"> <h4>modifier votre compte</h4> </a>
+                        
+                        <h:commandButton class="register-button" value="Logout" action="#{ABean.logout}" />
+                        
+                           </h:panelGroup> 
+                        <h:panelGroup rendered="#{empty user}">
+                            <h1 class="register-title">Connection</h1>
+                        
+                            <h:inputText class="register-input" id="email" value="#{ABean.emailagent}" a:placeholder="What's your email?" required="true" />
+                        
+                            <h:inputSecret class="register-input" id="pswd" value="#{ABean.passwordagent}" a:placeholder="What's your password?" required="true" /> 
+                            
+                        <p:commandButton update="form" class="register-button" value="Submit" action="#{ABean.verifyUser}" />
+                        
+                        <a href="chooseinscrit.xhtml"> <h4>nouveau utilisateur ?</h4> </a>
+                        
+                        <a href="pswdforgotten.xhtml"> <h4>mot de passe oublié ?</h4> </a>
+                        
+                        </h:panelGroup>
+                    
+		</h:form>
+        
+       
+        
+        
+        
+     
+    </h:body>
+    
+        
+</html>
